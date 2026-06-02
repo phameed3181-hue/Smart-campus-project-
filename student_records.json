@@ -1,0 +1,38 @@
+[
+    {
+        "ID": "101",
+        "Name": "Rahul",
+        "Age": 20,
+        "Courses": [
+            "Python",
+            "AI",
+            "DBMS"
+        ],
+        "Marks": [
+            85.0,
+            92.0,
+            78.0
+        ],
+        "Average": 85.0,
+        "Grade": "A",
+        "Fee": 17000
+    },
+    {
+        "ID": "102",
+        "Name": "Priya",
+        "Age": 21,
+        "Courses": [
+            "Python",
+            "AI",
+            "Web Dev"
+        ],
+        "Marks": [
+            90.0,
+            95.0,
+            88.0
+        ],
+        "Average": 91.0,
+        "Grade": "A+",
+        "Fee": 17000
+    }
+]
