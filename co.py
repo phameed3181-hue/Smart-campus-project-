@@ -1,3 +1,5 @@
+
+
 # =========================================================
 # SMART CAMPUS INFORMATION SYSTEM
 # =========================================================
@@ -234,4 +236,55 @@ def performance_analytics():
     print("Mean Average:", np.mean(averages))
     print("Median Average:", np.median(averages))
 
-    # ==========================
+    # Bar chart of student averages
+    plt.figure(figsize=(10, 5))
+    plt.bar(data["Name"], averages, color="steelblue")
+    plt.title("Student Performance Chart")
+    plt.xlabel("Student Name")
+    plt.ylabel("Average Marks")
+    plt.tight_layout()
+    plt.show()
+
+# =========================================================
+# MAIN MENU
+# =========================================================
+
+def main():
+    load_records()
+
+    while True:
+        print("\n===== Smart Campus Information System =====")
+        print("1. Register Student")
+        print("2. Display Students")
+        print("3. Search Student")
+        print("4. Sort Students by Average")
+        print("5. Save Records")
+        print("6. Scan Directory")
+        print("7. Performance Analytics")
+        print("8. Exit")
+
+        choice = input("\nEnter your choice (1-8): ")
+
+        if choice == "1":
+            register_student()
+        elif choice == "2":
+            display_students()
+        elif choice == "3":
+            search_student()
+        elif choice == "4":
+            sort_students()
+        elif choice == "5":
+            save_records()
+        elif choice == "6":
+            scan_directory()
+        elif choice == "7":
+            performance_analytics()
+        elif choice == "8":
+            save_records()
+            print("\nExiting... Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please enter a number between 1 and 8.")
+
+if __name__ == "__main__":
+    main()
